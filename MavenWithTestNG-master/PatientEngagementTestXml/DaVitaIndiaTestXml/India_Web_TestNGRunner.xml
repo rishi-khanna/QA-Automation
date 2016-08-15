@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- * @author Rishi Khanna * @version 2.0 * @Team:DaVita MCOE * @Email:rishi.khanna@davita.com 
+	* @Company:CitiusTech -->
+
+<suite name="PEIndiaPortal" verbose="1" parallel="tests"
+	thread-count="2" preserve-order="true">
+
+	<test name="DavitaIndiaLoginLogout" preserve-order="true">
+		<classes>
+			<class name="com.davita.mcoe.web.india.DaVitaIndia_LoginLogout_WebTest">
+				<methods>
+					<include name="validateDavitaIndiaLoginLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- <test name="Contact a Nurse Web" preserve-order="true"> <classes> <class 
+		name="com.davita.mcoe.web.india.PEIndia_ContactANurse_WebTest"> <methods> 
+		<parameter name="executionType" value="local" /> <include name="validateContactANurse" 
+		/> </methods> </class> <class name="com.davita.mcoe.mobile.india.PEIndia_ContactANurse_MobileTest"> 
+		<methods> <include name="validateContactANurse" /> </methods> </class> </classes> 
+		</test> -->
+</suite>

@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--  
+ * @author Rishi Khanna
+ * @version 2.0
+ * @Team:DaVita MCOE
+ * @Email:rishi.khanna@davita.com
+ * @Company:CitiusTech 
+ -->
+<suite name="VillageHealthMobileLoginLogout" verbose="1" parallel="tests"
+	thread-count="1">
+	<test name="login" preserve-order="true">
+		<classes>
+			<class name="com.davita.mcoe.mobile.vh.VillageHealthMobileReminders">
+				<methods>
+					<include name="VillageHealthMobileReminders" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

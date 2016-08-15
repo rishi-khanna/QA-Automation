@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- * @author Rishi Khanna * @version 2.0 * @Team:DaVita MCOE * @Email:rishi.khanna@davita.com 
+	* @Company:CitiusTech -->
+<suite name="VillageHealthIntegrationSuit" verbose="1" parallel="methods"
+	thread-count="1" preserve-order="true">
+
+	<!-- <test name="Contact a Nurse Web" preserve-order="true"> <classes> <class 
+		name="com.davita.mcoe.integration.vh.VillageHealth_ContactANurse_IntegrationTest"> 
+		<methods> <include name="validateLiveChat" /> </methods> </class> </classes> 
+		</test> -->
+
+	<test name="Assign Resources" preserve-order="true">
+		<classes>
+			<class
+				name="com.davita.mcoe.integration.vh.VillageHealth_Reminders_IntegrationTest">
+				<methods>
+					<include name="validateAssignedResources" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

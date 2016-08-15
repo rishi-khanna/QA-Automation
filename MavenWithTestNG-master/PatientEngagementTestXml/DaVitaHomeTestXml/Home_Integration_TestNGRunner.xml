@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--  
+ * @author Rishi Khanna
+ * @version 2.0
+ * @Team:DaVita MCOE
+ * @Email:rishi.khanna@davita.com
+ * @Company:CitiusTech 
+ -->
+<suite name="" verbose="1" parallel="tests" thread-count="1">
+
+</suite>
