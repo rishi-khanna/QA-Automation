@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- * @author Rishi Khanna * @version 2.0 * @Team:DaVita MCOE * @Email:rishi.khanna@davita.com 
+	* @Company:CitiusTech -->
+
+<suite name="VillageHealthPortalSuit" verbose="1" parallel="methods"
+	thread-count="1" preserve-order="true">
+
+	<test name="VillageHealthLoginLogout" preserve-order="true">
+		<classes>
+			<class name="com.davita.mcoe.web.vh.VillageHealth_LoginLogout_WebTest">
+				<methods>
+					<include name="validateVillageHealthLoginLogout" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- <test name="Contact1" preserve-order="true"> <classes> <class name="com.davita.mcoe.web.vh.VillageHealth_Smoke_WebTest"> 
+		<methods> <include name="smokeTest1" /> <include name="smokeTest2" /> <include 
+		name="smokeTest3" /> <include name="smokeTest4" /> <include name="smokeTest5" 
+		/> <include name="smokeTest6" /> <include name="smokeTest7" /> <include name="smokeTest8" 
+		/> </methods> </class> </classes> </test> -->
+</suite>
